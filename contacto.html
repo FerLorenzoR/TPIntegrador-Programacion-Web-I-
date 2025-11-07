@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📚 El libro Rebelde</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <img
+          src="assets/img/Logo.png"
+          alt="El libro Rebelde logo"
+          class="logo-img"
+          width="450"
+          height="250"
+        />
+        <ul class="nav-links">
+          <li><a href="index.html">Principal</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <h1>Contacto con el Libro Rebelde</h1>
+        <p>
+          Envianos tu consulta sobre ediciónes, stock, consultas o sugerencias:
+        </p>
+        <div id="form-section">
+          <form action="" name="contactForm" id="contact-form" novalidate>
+            <div>
+              <label for="nombre">Nombre Completo (*)</label>
+              <input type="text" id="nombre" name="nombre" required />
+              <p class="error-message" id="error-nombre"></p>
+            </div>
+
+            <div>
+              <label for="email">Correo Electrónico (*)</label>
+              <input type="email" id="email" name="email" required />
+              <p class="error-message" id="error-email"></p>
+            </div>
+
+            <div>
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" />
+              <p class="error-message" id="error-telefono"></p>
+            </div>
+
+            <div>
+              <label for="mensaje">Mensaje (*)</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+              ></textarea>
+              <p class="error-message" id="error-mensaje"></p>
+            </div>
+            <button type="submit" id="submit-btn">Enviar</button>
+          </form>
+          <div id="successResponse" style="display: none">
+            <h3>Su mensaje ha sido enviado con éxito!</h3>
+            <p>
+              Gracias por contactarnos. Pronto nos pondremos en contacto
+              contigo.
+            </p>
+            <div id="datos-enviados"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="error-modal" style="display: none">
+      <div class="error-content">
+        <h4>Por favor complete los siguientes campos:</h4>
+        <ul id="error-list"></ul>
+        <button id="cerrar-modal">Seguir</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 El libro Rebelde</p>
+    </footer>
+    <script src="assets/js/formulario.js"></script>
+  </body>
+</html>
