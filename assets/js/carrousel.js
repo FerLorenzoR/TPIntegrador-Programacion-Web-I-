@@ -1,8 +1,8 @@
 const imagenesCarrusel = [
-  "/assets/img/Portada1.jpeg",
-  "/assets/img/Portada2.jpeg",
-  "/assets/img/Portada3.jpeg",
-  "/assets/img/Portada4.jpeg",
+  "assets/img/Portada1.jpeg",
+  "assets/img/Portada2.jpeg",
+  "assets/img/Portada3.jpeg",
+  "assets/img/Portada4.jpeg",
 ];
 
 let indiceActual = 0;
